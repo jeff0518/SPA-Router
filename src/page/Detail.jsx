@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 
 function DetailPage() {
   const params = useParams()
@@ -6,6 +6,7 @@ function DetailPage() {
     <>
       <h1>Detail</h1>
       <p>{params.Id}</p>
+      <p><Link to=".." relative="path">back</Link></p>
     </>
   );
 }
