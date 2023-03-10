@@ -4,6 +4,7 @@ import ErrorPage from "./page/Error"
 import HomePage from "./page/Home"
 import ReservePage from "./page/Reserve"
 import RootLayout from "./page/Root"
+import DetailPage from "./page/Detail"
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <HomePage /> },
       { path: "/reserve", element: <ReservePage /> },
+      { path: "/reserve/:Id", element: <DetailPage />}
     ],
   },
 ]);
